@@ -174,11 +174,11 @@ body li{
 
 .footer-ul-div-1,.footer-ul-div-2{
     display:flex;
-    width: 100%;
 }
 .footer-ul-div-1 ul,.footer-ul-div-2 ul{
     display: flex;
-    justify-content:flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-ul-div-1 li,.footer-ul-div-2 li{
@@ -187,4 +187,13 @@ body li{
 
 .footer-ul-div-1 a,.footer-ul-div-2 a{
     color:rgba(0, 0, 0, 0.54);
+}
+
+@media screen and (max-width:672px) {
+    .footer-div-2{
+        flex-direction:column;
+    }
+    .footer-ul-div-1,.footer-ul-div-2{
+        justify-content: center;
+    }
 }
