@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Google Homepage</title>
 </head>
+
 <body>
     <header class="header">
-        <a>Gmail</a>
-        <a>Images</a>
+        <a href="https://mail.google.com/">Gmail</a>
+        <a href="https://www.google.co.in/imghp?hl=en-GB&authuser=0&ogbl">Images</a>
         <img src="images/google-grid.svg" alt="">
-        <button class="sign-in">sign in</button>
+        <img class="user-logo" src="images/burce_lee.png" alt="">
     </header>
     <div class="google-logo-div">
         <img src="images/google_logo.png" alt="google logo">
     </div>
-    <form class="search-bar" action="">
-     <div>
-            <img class="svg-img" src="images/search.svg">
-     </div>
-        <div>
-            <input type="text">
+    <form action="https://www.google.co.in/search?hl=en-GB&source=hp&q=" method="get">
+        <div class="search-bar-div">
+            <div class="search-svg-div">
+                <img src="images/search.svg">
+            </div>
+            <div class="input-div">
+                <input type="text" name="q" value="">
+            </div>
+            <div class="mic-svg-div">
+                <img src="images/mic.png" alt="google mic">
+            </div>
         </div>
-        <div>
-            <img class="svg-img" src="images/mic.png" alt="google mic">
+        <div class="btn-div">
+            <div>
+                <button class="btn" type="submit">Google Search</button>
+            </div>
+            <div>
+                <button class="btn">I'm Feeling Lucky</button>
+            </div>
         </div>
-        <button class="btn" type="submit">Google Search</button>
-        <button class="btn">I'm Feeling Lucky</button>
     </form>
-    <div>
-        <a href="https://blog.google/products/workspace/google-workspace-everyone?utm_source=hpp&utm_medium=referral&utm_campaign=&utm_content=&utm_term=">
-        Google Workspace is now available to everyone
+    <div class="google-workspace-link">
+        <a
+            href="https://blog.google/products/workspace/google-workspace-everyone?utm_source=hpp&utm_medium=referral&utm_campaign=&utm_content=&utm_term=">
+            Google Workspace is now available to everyone
         </a>
     </div>
-    <div class="lang-div"><p>Google offered in:
+    <div class="lang-div">
+        <p>Google offered in:</p>
         <ul>
             <li>हिन्दी</li>
             <li>বাংলা</li>
@@ -46,32 +59,44 @@
             <li>മലയാളം</li>
             <li>ਪੰਜਾਬੀ</li>
         </ul>
-    </p></div>
-    <footer>
-        <p>India</p><hr>
-        <div>
-            <li>
-                <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
-            </li>
-            <li>
-                <a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000081-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-            </li>
-            <li>
-                <a href="https://www.google.com/intl/en_in/business/">Buisness</a>
-            </li>
-            <li>
-                <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
-            </li>
-            <li>
-                <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
-            </li>
-            <li>
-                <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
-            </li>
-            <li>
-                <a>Privacy</a>
-            </li>
+    </div>
+    <footer class="footer-div">
+        <div class="footer-div-1">
+            <p>India</p>
+        </div>
+        <div class="footer-div-2">
+            <div class="footer-ul-div-1">
+                <ul>
+                    <li>
+                        <a
+                            href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000081-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/intl/en_in/business/">Buisness</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-ul-div-2">
+                <li>
+                    <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+                </li>
+                <li>
+                    <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+                </li>
+                <li>
+                    <a>Settings</a>
+                </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
