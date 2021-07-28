@@ -5,6 +5,12 @@
     padding:0;
     box-sizing: border-box;
 }
+html{
+    width: 100vw;
+    /* height:100vh; */
+    overflow: hidden;
+}
+
 
 body{
     font-size: 13px;
@@ -39,6 +45,7 @@ body li{
     height:55px;
     border-radius:50%;
 }
+
 .google-logo-div{
     height: 30vh;
     width:100%;
@@ -84,6 +91,7 @@ body li{
 .input-div{
     width:90%;
     height: 100%;
+    padding-left:1rem;
 }
 
 .input-div input{
@@ -137,11 +145,16 @@ body li{
     width: 100%;
     justify-content: center;
     margin:1rem;
+    flex-wrap: wrap;
+    margin:.5rem;
 }
 
+.lang-div p{
+    justify-self: center
+}
 .lang-div ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     flex-wrap: wrap;
 }
 
@@ -196,4 +209,20 @@ body li{
     .footer-ul-div-1,.footer-ul-div-2{
         justify-content: center;
     }
+    .google-logo-div{
+        height: 20vh;
+        width:100%;
+        display: flex;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
