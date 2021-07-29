@@ -49,16 +49,15 @@ body li{
 }
 
 .googleapps-grid-div{
-    /* position: relative; */
-
+    padding:5px 0;
 }
-
-.googleapps-grid-div img{
-    padding: 5px;
+.grid-img:hover, .grid-img:focus{
+    background-color: #00000010;
+    border-radius: 50%;
 }
 
 .google-apps{
-    /* display: none; */
+    display: none;
     position:absolute;
     top:0;
     right:0%;
@@ -71,6 +70,11 @@ body li{
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-radius: 1rem;
     padding:0;
+    font-size: 10px;
+}
+
+.googleapps-grid-div:focus-within .google-apps{
+    display: block;
 }
 
 .google-apps ul{
@@ -83,7 +87,7 @@ body li{
     display: flex;
     flex-direction:column;
     text-align:center;
-    padding:.5rem 1.1rem;
+    padding:.5rem .67rem;
 }
 
 .google-apps li:hover{
@@ -92,20 +96,29 @@ body li{
 }
 
 .google-apps img{
-    width:50px;
+    width:65px;
 }
 
 .google-apps hr{
     width: 300px !important;
     padding:0;
     margin:.5rem 0;
-    
+ 
 }
 
-.googleapps-grid-div:hover .google-apps{
-    display: block;
+.google-apps button{
+    margin:1rem 4.8rem;
+    background-color: white;
+    border:1px solid #00000030;
 }
 
+.google-apps a{
+    padding: 0;
+    color:blue;
+}
+.google-apps a:focus,.google-apps a:hover{
+    text-decoration: none;
+}
 ::-webkit-scrollbar {
     width: 8px;
   }
@@ -114,6 +127,7 @@ body li{
     background:#00000030;
     border-radius: 8px;
   }
+
 
 
 .google-logo-div{
@@ -246,6 +260,10 @@ body li{
 
 .lang-div li{
     padding:0 .5rem;
+    
+}
+
+.lang-div a{
     color: #1a0dab;
 }
 
