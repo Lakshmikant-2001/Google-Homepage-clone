@@ -7,10 +7,8 @@
 }
 html{
     width: 100vw;
-    /* height:100vh; */
     overflow: hidden;
 }
-
 
 body{
     font-size: 13px;
@@ -20,6 +18,10 @@ body{
 
 body a{
     text-decoration: none;
+}
+
+body a:focus, body a:hover{
+    text-decoration: underline;
 }
 
 body li{
@@ -46,6 +48,74 @@ body li{
     border-radius:50%;
 }
 
+.googleapps-grid-div{
+    /* position: relative; */
+
+}
+
+.googleapps-grid-div img{
+    padding: 5px;
+}
+
+.google-apps{
+    /* display: none; */
+    position:absolute;
+    top:0;
+    right:0%;
+    width:300px;
+    height:430px;
+    background-color: white;
+    overflow-y:scroll;
+    margin:3.8rem 1rem;
+    z-index:10;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-radius: 1rem;
+    padding:0;
+}
+
+.google-apps ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .8rem 1rem;
+}
+
+.google-apps li{
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+    padding:.5rem 1.1rem;
+}
+
+.google-apps li:hover{
+    background-color: #00B2EE20;
+    border-radius: 1rem;
+}
+
+.google-apps img{
+    width:50px;
+}
+
+.google-apps hr{
+    width: 300px !important;
+    padding:0;
+    margin:.5rem 0;
+    
+}
+
+.googleapps-grid-div:hover .google-apps{
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background:#00000030;
+    border-radius: 8px;
+  }
+
+
 .google-logo-div{
     height: 30vh;
     width:100%;
@@ -61,6 +131,7 @@ body li{
 }
 
 .search-bar-div{
+    position: relative;
     display: flex;
     align-items: center;
     width: 85%;
@@ -107,6 +178,21 @@ body li{
 
 .mic-svg-div img{
     width: 60%;
+}
+
+.searchbar-focus {
+    position:absolute;
+    width:100%;
+    height:150px;
+    
+    left: 0;
+    border:1px solid #00000030;
+    border-radius: 2rem;
+    z-index: 1;
+    background-color:white;
+    color:#00000090;
+    display:flex;
+    justify-content: center;
 }
 
 .btn-div{
@@ -201,6 +287,35 @@ body li{
 .footer-ul-div-1 a,.footer-ul-div-2 a{
     color:rgba(0, 0, 0, 0.54);
 }
+.settings-menu{
+    position: relative;
+}
+
+.settings-submenu{
+    display: none;
+    position:absolute;
+    bottom:0;
+    right: 0;
+    margin-bottom:40px;
+    font-size: 14px;
+    width:145px;
+    background-color: white;
+    border:1px solid black;    
+    text-align: left;
+}
+.settings-submenu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+.settings-submenu li{
+    padding:.8rem 0 0.8rem .8rem;
+}
+
+.settings-menu:focus-within .settings-submenu{
+    display:block;
+}
 
 @media screen and (max-width:672px) {
     .footer-div-2{
@@ -215,14 +330,3 @@ body li{
         display: flex;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
