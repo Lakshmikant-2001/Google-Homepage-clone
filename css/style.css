@@ -47,6 +47,7 @@ body li{
     height:55px;
     border-radius:50%;
 }
+/* ---- app grid start ----- */
 
 .googleapps-grid-div{
     padding:5px 0;
@@ -128,7 +129,7 @@ body li{
     border-radius: 8px;
   }
 
-
+/* ----- app grid end ------ */
 
 .google-logo-div{
     height: 30vh;
